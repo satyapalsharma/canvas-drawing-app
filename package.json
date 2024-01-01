@@ -1,0 +1,26 @@
+{
+  "name": "canvas-drawing-app",
+  "version": "1.0.0",
+  "description": "A simple paint application using HTML5 Canvas with colors and brush sizes.",
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "http-server . -o",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "http-server": "^14.1.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,css,html,md}": "prettier --write"
+  }
+}
