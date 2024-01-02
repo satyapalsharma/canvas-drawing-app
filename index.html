@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing App</title>
+    <!-- Link to the main stylesheet for styling the application -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Canvas Drawing App</h1>
+
+        <!-- Controls section for drawing tools -->
+        <div class="controls">
+            <!-- Color picker input -->
+            <div class="control-group">
+                <label for="colorPicker">Color:</label>
+                <input type="color" id="colorPicker" value="#000000">
+            </div>
+
+            <!-- Brush size slider -->
+            <div class="control-group">
+                <label for="brushSize">Brush Size:</label>
+                <input type="range" id="brushSize" min="1" max="50" value="5">
+                <span id="brushSizeValue">5</span>px
+            </div>
+
+            <!-- Clear canvas button -->
+            <div class="control-group">
+                <button id="clearCanvas">Clear Canvas</button>
+            </div>
+
+            <!-- Save image button -->
+            <div class="control-group">
+                <button id="saveImage">Save Image</button>
+            </div>
+        </div>
+
+        <!-- The main canvas element where drawing will occur -->
+        <!-- A default width/height is set here, but can be dynamically adjusted via CSS/JS -->
+        <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <!-- Link to the main JavaScript file that contains the application logic -->
+    <!-- The 'defer' attribute ensures the script executes after the HTML is parsed -->
+    <script src="js/app.js" defer></script>
+</body>
+</html>
